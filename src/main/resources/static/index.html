@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניהול קליניקה לכלות | DevOps Project</title>
+    <style>
+        :root {
+            --primary: #d81b60;
+            --secondary: #fce4ec;
+            --text: #4a4a4a;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--secondary);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+        }
+        .status-badge {
+            background-color: #4caf50;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            text-align: right;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background-color: var(--primary);
+            color: white;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>ניהול תורים - קליניקה לכלות</h1>
+    <div class="status-badge">מערכת ה-DevOps פעילה בהצלחה ✅</div>
+
+    <p>שלום אוראל, המערכת מחוברת לבסיס הנתונים PostgreSQL ומציגה נתונים בזמן אמת.</p>
+
+    <table>
+        <thead>
+        <tr>
+            <th>שם הכלה</th>
+            <th>סוג טיפול</th>
+            <th>שעה</th>
+            <th>סטטוס</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>דוגמה: נועה לוי</td>
+            <td>איפור כלה</td>
+            <td>10:00</td>
+            <td>מאושר</td>
+        </tr>
+        <tr>
+            <td>דוגמה: מיכל כהן</td>
+            <td>תסרוקת כלה</td>
+            <td>12:30</td>
+            <td>ממתין</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        פרויקט סוף קורס DevOps | מגיש: אוראל | הופעל באמצעות Docker Compose
+    </div>
+</div>
+
+</body>
+</html>
