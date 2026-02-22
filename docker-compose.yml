@@ -1,6 +1,5 @@
 version: '3.8'
 services:
-  # קונטיינר של בסיס הנתונים
   db:
     image: postgres:15
     environment:
@@ -10,7 +9,6 @@ services:
     ports:
       - "5432:5432"
 
-  # קונטיינר של האפליקציה שלך
   app:
     build: .
     ports:
